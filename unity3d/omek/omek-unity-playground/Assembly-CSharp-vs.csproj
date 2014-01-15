@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{F78C53B1-978C-F33B-2EE2-DDA75BB3F0A5}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_5;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Etc/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Etc/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\MotionToolkit\SampleAssets\Scripts\CheckforCamera.cs" />
+     <Compile Include="Assets\MotionToolkit\SampleAssets\Scripts\DebugButtonListener.cs" />
+     <Compile Include="Assets\MotionToolkit\SampleAssets\Scripts\NormalButton.cs" />
+     <Compile Include="Assets\MotionToolkit\SampleAssets\Scripts\RestPositionOnEnter.cs" />
+     <Compile Include="Assets\MotionToolkit\SampleAssets\Scripts\TextColor.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\General\MovementBox.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\General\ScreenPositionHelper.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\General\UnityConverter.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\General\UnityLog4NetAppender.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Management\DebugInformation.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Management\EscalationManager.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Management\UnityBeckonManager.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Management\UnityPlayerColorThemes.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Management\UnityPlayerManagement.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\PersonRadar\SimplePersonRadar.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\PersonRadar\TrapezoidPersonRadar.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Pointer\GestureButton.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Pointer\HotSpotButton.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Pointer\PointerListener.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Pointer\PointersVisualization.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\Pointer\UnityPointerManager.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\SensorImage\DepthCamImage.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\SensorImage\MultiplayerMasks.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\SensorImage\OnGUIDepthCamImage.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\SensorImage\OnGUIPlayerMask.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\SensorImage\PlayerMask.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\SensorImage\SensorImageConfigurator.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\SensorImage\UnityImageConverters.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\TrackingControllers\JointImagePositionTransformer.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\TrackingControllers\JointPositionTransformer.cs" />
+     <Compile Include="Assets\MotionToolkit\Scripts\TrackingControllers\SkeletonTrackingAnimation.cs" />
+     <Compile Include="Assets\Scripts\Walk.cs" />
+     <None Include="Assets\Resources\Classifiers\YishengGesturePack\rightkneeup.xml" />
+     <None Include="Assets\Resources\Classifiers\BasicGesturePack\leftclick.xml" />
+     <None Include="Assets\MotionToolkit\Plugins\BeckonDotNetFramework.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\rightswiperight.xml" />
+     <None Include="Assets\Resources\Classifiers\BasicGesturePack\rightclick.xml" />
+     <None Include="Assets\MotionToolkit\Plugins\BeckonDotNet.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\leftswipeleft.xml" />
+     <None Include="Assets\Resources\Classifiers\YishengGesturePack\leftkneeup.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\rightclick.xml" />
+     <None Include="Assets\MotionToolkit\Plugins\CommonFrameworkForBeckon.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\leftclick.xml" />
+     <None Include="Assets\MotionToolkit\Prefabs\Images\Shaders\PlayerMaskShaderPlusGlowForPlanes.shader" />
+     <None Include="Assets\Resources\Classifiers\BasicGesturePack\leftswipeleft.xml" />
+     <None Include="Assets\MotionToolkit\Plugins\BeckonDotNetWrapper.xml" />
+     <None Include="Assets\Resources\Classifiers\BasicGesturePack\rightswiperight.xml" />
+     <None Include="Assets\MotionToolkit\Prefabs\Images\Shaders\PlayerMaskShaderGlowForPlanes.shader" />
+ <Reference Include="BeckonDotNet">
+ <HintPath>Assets\MotionToolkit\Plugins\BeckonDotNet.dll</HintPath>
+ </Reference>
+ <Reference Include="BeckonDotNetFramework">
+ <HintPath>Assets\MotionToolkit\Plugins\BeckonDotNetFramework.dll</HintPath>
+ </Reference>
+ <Reference Include="BeckonDotNetWrapper">
+ <HintPath>Assets\MotionToolkit\Plugins\BeckonDotNetWrapper.dll</HintPath>
+ </Reference>
+ <Reference Include="CommonFrameworkForBeckon">
+ <HintPath>Assets\MotionToolkit\Plugins\CommonFrameworkForBeckon.dll</HintPath>
+ </Reference>
+ <Reference Include="log4net">
+ <HintPath>Assets\MotionToolkit\Plugins\log4net.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
